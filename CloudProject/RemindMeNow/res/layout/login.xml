@@ -20,13 +20,17 @@
           android:orientation="vertical"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
+          android:gravity="center"
           android:padding="10dip">
         <!--  Name Label -->  
-        <TextView 
-            	android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#372c24"
-                android:text="@string/name"/>
+
+        <TextView
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textColor="#372c24" />
+
         <EditText 
                 android:id="@+id/name"
                 android:layout_width="fill_parent"
@@ -38,6 +42,7 @@
         <TextView 
             	android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:textColor="#372c24"
                 android:text="@string/email"/>
         <EditText 
@@ -50,6 +55,7 @@
         <!-- Age -->
         <TextView android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:textColor="#372c24"
                 android:text="@string/age"/>
         <EditText 
@@ -64,7 +70,9 @@
         android:id="@+id/genderText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#00FF00"
         android:layout_marginTop="19dp"
+        android:gravity="center"
         android:text="@string/gender" />
         <RadioGroup 
                 android:id="@+id/gender"
@@ -75,12 +83,14 @@
          				android:id="@+id/femaleRadio"
          				android:layout_width="wrap_content"
         				android:layout_height="wrap_content"
+        				android:gravity="center"
         				android:text="@string/female"    
          		    />
          		<RadioButton
          				android:id="@+id/maleRadio"
          				android:layout_width="wrap_content"
         				android:layout_height="wrap_content"
+        				android:gravity="center"
         				android:text="@string/male"    
          		    />
         </RadioGroup>
