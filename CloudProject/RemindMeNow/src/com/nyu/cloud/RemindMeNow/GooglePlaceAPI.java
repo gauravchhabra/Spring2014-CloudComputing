@@ -11,9 +11,10 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class GooglePlaceAPI {
-	
-		public static void main(String[] args){
-			
+		
+	ArrayList<placedata> arraylist_place = new ArrayList<placedata>();
+		public ArrayList<placedata> getPlacesAPI(){
+			System.out.println("Inside Places API");
 			ArrayList<String> category_arr = new ArrayList<String>();
 			GetUniqueCat GetUniqueCat_ob = new GetUniqueCat();
 			category_arr = GetUniqueCat_ob.cat_to_search();
@@ -40,7 +41,7 @@ public class GooglePlaceAPI {
 				JSONArray jsonarray = jsonObj.getJSONArray("results");
 				System.out.println("length is " +jsonarray.length());
 				
-				ArrayList<placedata> arraylist_place = new ArrayList<placedata>();
+				
 				
 				for(int i=0; i<jsonarray.length(); i++){
 					placedata pdata_obj = new placedata();
@@ -57,18 +58,19 @@ public class GooglePlaceAPI {
 				//System.out.println("********************************************************************");
 				//System.out.println(arraylist_place.size());
 				
-				for (int i = 0; i < arraylist_place.size(); i++) {
+				/*for (int i = 0; i < arraylist_place.size(); i++) {
 					//System.out.println(i);
 					//System.out.println("Name: " + arraylist_place.get(i).getname_P());
 					System.out.println("Name: " + arraylist_place.get(i).getname_P() +
 						"     Latitude: " + arraylist_place.get(i).getlat_p() +
 						"     Longitude: " + arraylist_place.get(i).getlng_p());   
-				}	
+				}	*/
 			} catch (JSONException e) {
 	            System.out.println(e);
 	        }
 			
 			}
+			return arraylist_place;
 		}
 		
 		
