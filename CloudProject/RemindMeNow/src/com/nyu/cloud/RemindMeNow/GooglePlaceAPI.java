@@ -1,7 +1,8 @@
 package com.nyu.cloud.RemindMeNow;
 
-import java.net.*;
 import java.io.*;
+
+import java.net.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.*;
@@ -22,7 +23,7 @@ public class GooglePlaceAPI {
 			for (int s=0; s<category_arr.size(); s++){
 				System.out.println("********************************************************************");
 				System.out.println (category_arr.get(s));
-			//}
+			
 			System.out.println("********************************************************************");
 			String category = category_arr.get(s);
 			
@@ -35,7 +36,7 @@ public class GooglePlaceAPI {
 			
 			
 			String json = getJSON(urlString);
-			//System.out.println(json);
+			
 			try {
 				JSONObject jsonObj = new JSONObject(json.toString());
 				JSONArray jsonarray = jsonObj.getJSONArray("results");
@@ -89,7 +90,7 @@ public class GooglePlaceAPI {
 			   String line;
 			   
 			   while ((line = bufferedReader.readLine()) != null) {
-				  //System.out.println(line);
+				  
 				   
 			    content.append(line + "\n");
 			   }
@@ -101,6 +102,4 @@ public class GooglePlaceAPI {
 			  return content.toString();
 			 }
 		
-	
-
 }
