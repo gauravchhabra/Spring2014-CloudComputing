@@ -41,6 +41,7 @@ public class CreateDynamoDB extends Activity{
         System.out.println("Result: " + putItemResult);
         System.out.println("InsertItem Successful");
 	}
+	
 	private static Map<String, AttributeValue> newItem(String email, String name, String gender, String age) {
         Map<String, AttributeValue> item = new HashMap<String, AttributeValue>();
         item.put("email", new AttributeValue().withS(email));
