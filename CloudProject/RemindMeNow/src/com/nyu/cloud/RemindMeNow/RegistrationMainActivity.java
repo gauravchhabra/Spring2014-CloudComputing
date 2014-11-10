@@ -9,8 +9,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class RegistrationMainActivity extends Activity{
-
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
