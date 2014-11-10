@@ -23,6 +23,7 @@ import android.view.View;
  * @see android.view.View#setSystemUiVisibility(int)
  * @see android.view.WindowManager.LayoutParams#FLAG_FULLSCREEN
  */
+ 
 public abstract class SystemUiHider {
 	/**
 	 * When this flag is set, the
