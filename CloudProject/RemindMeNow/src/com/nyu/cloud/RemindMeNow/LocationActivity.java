@@ -36,11 +36,9 @@ import com.google.android.gms.location.LocationClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 
-public class LocationActivity extends FragmentActivity implements
-LocationListener,
+public class LocationActivity extends FragmentActivity implements LocationListener, 
 GooglePlayServicesClient.ConnectionCallbacks,
 GooglePlayServicesClient.OnConnectionFailedListener{
-
 
     // A request to connect to Location Services
     private LocationRequest mLocationRequest;
@@ -111,7 +109,6 @@ GooglePlayServicesClient.OnConnectionFailedListener{
          * handle callbacks.
          */
         mLocationClient = new LocationClient(this, this, this);
-
     }
 
     /*
@@ -622,6 +619,4 @@ GooglePlayServicesClient.OnConnectionFailedListener{
             return mDialog;
         }
     }
-
-
 }
