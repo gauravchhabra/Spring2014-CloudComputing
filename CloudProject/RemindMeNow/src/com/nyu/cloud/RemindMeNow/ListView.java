@@ -16,6 +16,7 @@ import android.view.View;
  * 
  * @see SystemUiHider
  */
+ 
 public class ListView extends Activity {
 	/**
 	 * Whether or not the system UI should be auto-hidden after
@@ -44,7 +45,6 @@ public class ListView extends Activity {
 	 * The instance of the {@link SystemUiHider} for this activity.
 	 */
 	private SystemUiHider mSystemUiHider;
-
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
