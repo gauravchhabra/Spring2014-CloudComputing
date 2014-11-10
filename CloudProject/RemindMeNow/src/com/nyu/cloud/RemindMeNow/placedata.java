@@ -32,5 +32,4 @@ public class placedata {
     public String toString(){
     	return String.format("Name: %s Latitude: %f Longitude: %f", name_P, lat_p, lng_p);
     }
-
 }
