@@ -3,9 +3,8 @@ package com.nyu.cloud.RemindMeNow;
 public class Arr_cat_desc_class {
 	String cat;
 	String Desc;
-	
-	public void set_cat(String c) {
-        this.cat = c;
+	public void set_cat(String cat) {
+        this.cat = cat;
     }
 
     public String get_cat() {
@@ -15,7 +14,7 @@ public class Arr_cat_desc_class {
     public void set_desc(String d) {
         this.Desc = d;
     }
-
+    
     public String get_desc() {
         return Desc;
     }
