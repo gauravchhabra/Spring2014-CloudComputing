@@ -16,8 +16,6 @@ package com.nyu.cloud.RemindMeNow;
  * limitations under the License.
  */
 
-
-
 import android.content.Context;
 import android.location.Location;
 
@@ -27,6 +25,7 @@ import com.nyu.cloud.RemindMeNow.R;
 /**
  * Defines app-wide constants and utilities
  */
+ 
 public final class LocationUtils {
 
     // Debugging tag for the application
