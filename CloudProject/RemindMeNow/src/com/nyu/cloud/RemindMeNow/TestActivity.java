@@ -40,13 +40,13 @@ import android.widget.Toast;
 import android.location.Location;
 import android.location.LocationManager;
 
-
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
  * 
  * @see SystemUiHider
  */
+ 
 public class TestActivity extends Activity implements android.location.LocationListener {
 
 	private LocationManager mLocationManager = null;
@@ -58,12 +58,6 @@ public class TestActivity extends Activity implements android.location.LocationL
 	private static double longitude=-73.939129;
 	private static long mtime;
 	TextView txtView;
-	
-	 
-	
-	
-	
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
