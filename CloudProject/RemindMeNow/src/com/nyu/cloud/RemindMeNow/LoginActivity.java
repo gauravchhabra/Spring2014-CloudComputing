@@ -66,8 +66,7 @@ public class LoginActivity extends Activity implements OnClickListener{
 
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
-
+		
 		Intent intent = new Intent(getApplicationContext(),RegistrationMainActivity.class);
 		Bundle b = new Bundle();
 		b.putString("name", name.getText().toString());
@@ -81,17 +80,11 @@ public class LoginActivity extends Activity implements OnClickListener{
 		ageValue = age.getText().toString();
 		genderValue = radioButton.getText().toString();
 		new CreateDynamoDB().insertItem( emailValue, nameValue,ageValue,genderValue);
-		//to go to the content
-		//intent.putExtras(b);
 		startActivity(intent);
 	}
 
 	public void checkCredentials() {
 		new CreateDynamoDB().createTable();
-        
-
 	}
-
-
 }
 
